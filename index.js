@@ -27,26 +27,26 @@
 
 // console.log(addTen(25))
 
-// function f() {
-//   let count = 0;
-//   return function() {
-//     return count++
-//   }
-// }
+function f() {
+  let count = 0;
+  return function() {
+    return count++
+  }
+}
 
-// const count1 = f()
-// count1()
-// count1()
-// count1()
-// console.log(count1())
-// const count2 = f()
-// console.log(count2())
+const count1 = f()
+count1()
+count1()
+count1()
+console.log(count1())
+const count2 = f()
+console.log(count2())
 
 //=======================================================
 
-const find = str => {
-  const matched = str.match(/[aeiou]/g)
-  return matched ? matched.length : 0
-}
+// const find = str => {
+//   const matched = str.match(/[aeiou]/g)
+//   return matched ? matched.length : 0
+// }
 
-console.log(find('ahfeeuncd'))
+// console.log(find('ahfeeuncd'))
